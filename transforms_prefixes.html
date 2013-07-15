@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>CSS Transforms</title>
+<style>
+  .box {
+    height: 1.25em;
+    width: 7em;
+    border: 1px solid #bbb;
+    text-align: center;
+    margin: 30px auto;
+
+    /*transition: all 1s ease;*/
+  }
+
+
+  /* Examples of transforms that are activated on hover*/
+  .rotate:hover {
+    transform: rotate(30deg);
+  }
+
+  .enlarge:hover {
+    transform: scale(1.5);
+  }
+
+  .shrink:hover {
+    transform: scale(.5);
+  }
+
+  .slide-left:hover {
+    transform: translate(-50px, 0px);
+  }
+
+  .slide-down:hover {
+    transform: translate(0, 200%);
+  }
+
+  .skew-right:hover {
+    transform: skew(0, 20deg);
+  }
+</style>
+</head>
+<body>
+  <div class='box rotate'>Rotate me</div>
+  <div class='box enlarge'>Grow me!</div>
+  <div class='box shrink'>Shrink me!</div>
+  <div class='box slide-left'>Slide left!</div>
+  <div class='box slide-down'>Slide down!</div>
+  <div class='box skew-right'>Skew right!</div>
+</body>
+</html>
