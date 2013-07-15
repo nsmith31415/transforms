@@ -1,34 +1,49 @@
 .box {
-  height: 1.25em;
-  width: 7em;
-  border: 1px solid #bbb;
-  text-align: center;
-  margin: 30px auto;
+    display: inline-block;
+    background: white;
+    height: 1.25em;
+    width: 7em;
+    border: 1px solid #bbb;
+    text-align: center;
+    /*margin: 30px auto;*/
+    transition: all 1s linear;
+}
 
-  /*transition: all 1s ease;*/
+.slide-down {
+    border-radius: 4px;
+    box-shadow: 0 3px 0 black;
+    border: 1px solid black;
+    transition: all 200ms linear;
 }
 
 /* Examples of transforms that are activated on hover*/
 .rotate:hover {
-  transform: rotate(30deg);
+    transform: rotate(720deg);
+    -webkit-transform: rotate(9000deg);
 }
 
 .enlarge:hover {
-  transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
 }
 
 .shrink:hover {
-  transform: scale(.5);
+    transform: scale(.5);
+    -webkit-transform: scale(.5);
 }
 
 .slide-left:hover {
-  transform: translate(-50px, 0px);
+    transform: translate(-50px, 0px);
+    -webkit-transform: translate(-50px, 0px);
 }
 
-.slide-down:hover {
-  transform: translate(0, 200%);
+.slide-down:active {
+    transform: translate(0, 4px);
+    -webkit-transform: translate(0, 4px);
+    box-shadow: none;
 }
 
 .skew-right:hover {
-  transform: skew(0, 20deg);
+    transform: skew(0, 20deg);
+    -webkit-transform: skew(0, 20deg);
 }
