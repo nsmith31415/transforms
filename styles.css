@@ -5,17 +5,17 @@ body {
 }
 
 .box {
-    background: white;
-    height: 1.25em;
-    width: 7em;
-    border: 1px solid #bbb;
-    text-align: center;
-    margin: 30px auto;
-    padding: .5em 1em;
-    border-radius: 4px;
+  background: white;
+  height: 1.25em;
+  width: 7em;
+  border: 1px solid #bbb;
+  text-align: center;
+  margin: 30px auto;
+  padding: .5em 1em;
+  border-radius: 4px;
 }
 
 .slide-down {
-    box-shadow: 0 3px 0 black;
-    border: 1px solid black;
+  box-shadow: 0 3px 0 black;
+  border: 1px solid black;
 }
