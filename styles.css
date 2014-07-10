@@ -8,7 +8,7 @@ body {
   background: white;
   height: 1.25em;
   width: 7em;
-  border: 1px solid #bbb;
+  border: 1px solid #bbbbbb;
   text-align: center;
   margin: 30px auto;
   padding: .5em 1em;
@@ -18,4 +18,46 @@ body {
 .slide-down {
   box-shadow: 0 3px 0 black;
   border: 1px solid black;
+}
+
+.box {
+  transition: all .5s;
+}
+
+.rotate:hover {
+  -webkit-transform: rotate(540deg);
+  -ms-transform: rotate(540deg);
+  transform: rotate(540deg);
+}
+
+.enlarge:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.shrink:hover {
+  -webkit-transform: scale(0.75);
+  -ms-transform: scale(0.75);
+  transform: scale(0.75);
+}
+
+.slide-left:hover {
+  -webkit-transform: translate(-30px, 0);
+  -ms-transform: translate(-30px, 0);
+  transform: translate(-30px, 0);
+}
+
+.skew-right:hover {
+  -webkit-transform: skew(-30deg);
+  -ms-transform: skew(-30deg);
+  transform: skew(-30deg);
+}
+
+.slide-down:active {
+  -webkit-transform: translate(0, 3px);
+  -ms-transform: translate(0, 3px);
+  transform: translate(0, 3px);
+  border: 1px solid #bbbbbb;
+  box-shadow: none;
 }

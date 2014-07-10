@@ -4,17 +4,24 @@ body {
   font-size: 20px;
 }
 
+$shadow: 3px;
+$box_border_color: #bbb;
+
 @mixin transform($value) {
     -webkit-transform: $value;
     -ms-transform: $value;
     transform: $value;
 }
 
+@mixin box-border($color) {
+    border: 1px solid $box_border_color;
+}
+
 .box {
     background: white;
     height: 1.25em;
     width: 7em;
-    border: 1px solid #bbb;
+    @include box_border(box_border_color);
     text-align: center;
     margin: 30px auto;
     padding: .5em 1em;
@@ -22,6 +29,33 @@ body {
 }
 
 .slide-down {
-    box-shadow: 0 3px 0 black;
+    box-shadow: 0 $shadow 0 black;
     border: 1px solid black;
+}
+.box{
+    transition: all .5s;
+}
+.rotate:hover {
+    @include transform (rotate(540deg));
+}
+
+.enlarge:hover {
+    @include transform (scale(1.5));
+}
+
+.shrink:hover {
+    @include transform(scale(0.75));
+}
+
+.slide-left:hover {
+    @include transform(translate(-30px,0));
+}
+
+.skew-right:hover {
+    @include transform(skew(-30deg));
+}
+.slide-down:active {
+    @include transform(translate(0, $shadow));
+    @include box_border($box_border_color);
+    box-shadow: none;
 }
