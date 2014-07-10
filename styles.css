@@ -13,43 +13,9 @@ body {
     margin: 30px auto;
     padding: .5em 1em;
     border-radius: 4px;
-    transition: all 1s ease;
 }
 
 .slide-down {
     box-shadow: 0 3px 0 black;
     border: 1px solid black;
-    transition: all 200ms linear;
-}
-
-/* Examples of transforms that are activated on hover*/
-.rotate:hover {
-    transform: rotate(720deg);
-    -webkit-transform: rotate(9000deg);
-}
-
-.enlarge:hover {
-    transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-}
-
-.shrink:hover {
-    transform: scale(.5);
-    -webkit-transform: scale(.5);
-}
-
-.slide-left:hover {
-    transform: translate(-50px, 0px);
-    -webkit-transform: translate(-50px, 0px);
-}
-
-.slide-down:active {
-    transform: translate(0, 4px);
-    -webkit-transform: translate(0, 4px);
-    box-shadow: none;
-}
-
-.skew-right:hover {
-    transform: skew(0, 20deg);
-    -webkit-transform: skew(0, 20deg);
 }
